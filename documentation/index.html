@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Eventicka Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mandar Shirke">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+	<a class="brand" href="index.html">Eventicka</a> <!-- TIP: Change this for the name of your file -->
+     	<div class="nav-collapse">
+        <ul class="nav">
+              <li><a href="#top" class="active">Top</a></li>
+              <li><a href="#layout">Layout</a></li>
+              <li><a href="#styles">Styles</a></li>
+              <li><a href="#templates">Templates</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+              <li style="display:none"><a href="#plugins">Plugins</a></li>
+              <li><a href="#navigation">Navigation</a></li>
+              <li><a href="#form">Forms</a></li>
+              <li><a href="#credits">Credits</a></li>
+              <li><a href="http://themeforest.net/user/QuadCodes" target="_blank">Contact Me</a></li>
+          </ul>
+</div>
+	</div>
+		</div>
+			</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->
+
+<div class="container">
+
+	<div class="masthead">
+	    <h1>Eventicka</h1>
+	    <p class="marketing-byline" style="margin-top: -3px;font-size: 16px;"><strong>Date :</strong> 20-10-14 | <strong>Version :</strong> 1.0 | <strong>Author :</strong> Mandar Shirke</p>
+	    <p>Eventicka is Clean & Responsive Event Landing Page</p>
+
+	</div> <!-- masthead -->
+
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/QuadCodes" target="_blank">here</a>. Thanks so much!</p>
+  </div> <!-- intro -->
+
+<section id="layout">
+	<div class="page-header">
+	  <h1>HTML <small>Structure & Layout</small></h1>
+	</div>
+
+<div class="row">
+    <div class="span3">
+
+    <p>Eventicka is Clean & Responsive Event Landing HTML5 Template. It consist of About, Schedule, Speakers, Venue, Gallery, Ticket, Faq, etc pages. Here is Basic Layout Screenshot : </p>
+</div>
+
+<div class="span9">
+    <div class="alert"><strong>NOTE : </strong>Html layout below is visible only if you are browsing through PC. For Tablet & Mobile, This layout will adapt to "Mobile Friendly Layout" enabling users "Ease of Browsing".</div>
+
+
+
+	<img src="./assets/img/html-structure.png" alt="html-structure" />
+</div>
+</div>
+
+</section> <!-- Layout -->
+
+
+<section id="styles">
+    <div class="page-header">
+       <h1>Styles <small>Styles customization and highlights</small></h1>
+     </div>
+
+ <div class="alert alert-info"> <b>Primarily</b> there are 5 CSS files in this theme.</div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Primary CSS</h3>
+  <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>architecture.css</code></td>
+                  <td>This stylesheet is an architecture behind responsiveness of this template. It is also a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file. </td>
+                </tr>
+            <tr>
+                  <td><code>style.css</code></td>
+                  <td>Is responsible for all the styling for Eventicka Template. The file is separated into sections. Here is Table of Content. <br/><br/>
+<pre class="prettyprint">
+	1. GLOBAL
+	2. HOMEPAGE
+		2.1 COUNTDOWN TIMER
+		2.2 EVENT BANNER/TICKER
+		2.3 OVERLAY & CENTER LOGO
+	3. NAVIGATION
+		3.1 PRIMARY NAVIGATION
+		3.2 TAB NAVIGATION
+	4. PAGE STYLING
+		4.1 HEADER
+		4.2 LOGO
+		4.3 CONTENT WRAPPERS
+		4.4 SECTION TITLE
+		4.5 MODULE TITLE
+		4.6 EVENT LAYOUT
+		4.7 FOOTER
+	5. MODULES
+		5.1 SPEAKERS
+		5.2 SCHEDULE
+		5.3 SPONSORS
+		5.4 TESTIMONIAL
+		5.5 SUBSCRIBE
+		5.6 PRICING
+		5.7 TICKTS
+		5.8 ABOUT COUNT
+		5.9 ADDRESS LIST
+		5.10 SOCIAL LIST
+		5.11 FAQ
+		5.12 GALLERY
+	6. MISCELLANEOUS
+	7. PLUGIN CSS
+		7.1 TIPSY
+		7.2 SLIDER
+		7.3 FITVIDS / VIDEO
+		7.4 OWL CAROUSEL
+		7.5 SUPERSIZED	/ FULLSCREEN SLIDER
+	8. CONDITIONAL LAYOUT CSS FOR MOBILE / TABLET DEVICES [ MEDIA QUERIES ]
+		8.1 TABLETS
+		8.2 MOBILE PORTRAIT
+		8.3 MOBILE WIDE / LANDSCAPE
+</pre>
+
+If you would like to edit any specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.
+                  </td>
+            </tr>
+            <tr style="display:none">
+                  <td><code>custom.css</code></td>
+                  <td>Is purely optional CSS file. If you want to make changes within font-family, font-size OR Highlight color of the template, this is the way to go. Here the is the Basic structure of custom.css : <br/><br/>
+<pre class="prettyprint css">
+/* ASSIGN CUSTOM PRIMARY FONT */
+
+body, #primary-nav li a > p, .qcSecTitle h1, .qcPageTitle h1, .qcSubTitle, .blog-details h3, .blog-details .blog-meta li, .blogSingleMeta li a, .overlay p.client, .event-plus, .event-details h3, .qcTeamCol h4, .small-box p, .small-box h4, .widget p, #qcFooterNav, h2#qcSkillTitle, .qcSkillNote, ul.tabs li a, blockquote, .qcBigTitle, h2.qcCommentTitle {
+	font-family: 'Open sans', sans-serif;
+}
+
+/* ASSIGN CUSTOM SECONDARY FONT */
+
+.qcPageTitle > .col:last-child > div, .qcPageTitle p, .qcPageDesc, .small-box p.qcPageDesc, .format-col h1, .overlay p.title, .date-col h1, .dropcap,  {
+	font: font-family: 'Raleway', sans-serif;
+}
+
+/* 	ASSIGN CUSTOM PRIMARY HIGHLIGHT COLOR */
+
+#logo, .qcSecTitle i, #qcBlogSort li a.active, .blog-plus, .qcPortSort li.active, .qcFeatureCol .small-box i {
+	background-color: orange;
+}
+
+#primary-nav li.selected a, #primary-nav li.selected a:hover, #primary-nav li.selected a i, #primary-nav li:hover.selected a i, #primary-nav li.shop a, #qcPrevNext li a:hover, .overlay p.client {
+	color: orange;
+}
+
+ul.tabs li a.selected {
+	border-top-color: orange;
+}
+
+/* ASSIGN CUSTOM PAGE BACKGROUND COLOR/IMAGE */
+
+.page {
+	background: #fff url('');
+}
+</pre>
+This file will enable you to make changes within template style in ONE go. If you want to define custom style for the template, Simply <strong>Add</strong> this custom.css stylesheet after other css stylesheets are loaded. So that it can override any previous css.
+
+                  </td>
+            </tr>
+
+
+          </tbody>
+            </table>
+      </div>
+        </div>
+    <hr />
+    <div class="row">
+	<div class="span3">
+	   <h3>Plugin CSS</h3>
+	   <p>Eventicka use many Plugins / Widgets to extend its functionality. List of those stylesheets is as follow : </p>
+
+	</div>
+
+<div class="span9">
+		<table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>prettyphoto.css</code></td>
+                  <td>Lightbox / Modal specific stylesheet.</td>
+            </tr>
+          </tbody>
+            </table>
+<div class="alert"><strong>INFO :</strong> These stylesheets are required to work that specific Plugin / Widget properly. I recommend not to make any changes within these files unless you are familiar with that particular Plugin / Widget. </div>
+        </div>
+  </section>
+      <!-- Styles -->
+
+
+      <section id="templates">
+	<div class="page-header">
+	  <h1>Templates <small>Page Modules</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <p>Altogether Eventicka has 8 Page Modules.</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>File Name</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>Home</code></td>
+	          <td>Event Countdown & Event Feature along with Fullscreen Slideshow.</td>
+	        </tr>
+	        <tr>
+	          <td><code>About</code></td>
+	          <td>Explain in detail about your company/event.</td>
+	        </tr>
+	        <tr>
+	          <td><code>Schedule</code></td>
+	          <td>Describe schedule for the event.</td>
+	        </tr>
+	        <tr>
+	          <td><code>Speakers</code></td>
+	          <td>List speakers who will participate in the event.</td>
+	        </tr>
+	        <tr>
+	          <td><code>Venue</code></td>
+	          <td>Give details for the Venue. eg. Layout & Map</td>
+	        </tr>
+	        <tr>
+	          <td><code>Gallery</code></td>
+	          <td>Showcase past events memories through images & videos.</td>
+	        </tr>
+	        <tr>
+	          <td><code>Ticket</code></td>
+	          <td>Show Ticket packages & Embed ticket form from third party ticket booking services. eg. Eventbrite</td>
+	        </tr>
+	        <tr>
+	          <td><code>FAQ</code></td>
+	          <td>List Frequently asked questions about the event.</td>
+	        </tr>
+	        <tr>
+	          <td><code>Terms & Conditions</code></td>
+	          <td>Explain Terms & Conditions for the event.</td>
+	        </tr>
+	        </tbody>
+	    </table>
+	  </div>
+	</div>
+	<hr />
+
+  </section><!-- Templates -->
+
+
+      <section id="javascript">
+	<div class="page-header">
+	  <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <h3>JavaScript Files</h3>
+	    <p>Altogether Eventicka uses 15 Javascript files.</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>File Name</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>jquery.js</code></td>
+	          <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write. <span class="label label-info"><a href="http://jquery.com/" target="_blank" style="color:#fff">LINK</a></span></td>
+	        </tr>
+	        <tr>
+	          <td><code>plugins.library.js</code></td>
+	          <td>Library of Most Commonly & Frequently needed scripts while dealing with Responsive Layouts.</td>
+	        </tr>
+	        <tr>
+	          <td><code>supersized.3.2.7.min.js</code></td>
+	          <td>supersized is Fullscreen Slider Plugin. <span class="label label-info"><a href="http://buildinternet.com/project/supersized/" target="_blank" style="color:#fff">LINK</a></span></td>
+	        </tr>
+	        <tr>
+	          <td><code>countdown.js</code></td>
+	          <td>A jQuery plugin for CountDown Timer. <span class="label label-info"><a href="http://www.littlewebthings.com/projects/countdown/" target="_blank" style="color:#fff">LINK</a></span></td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery.marquee.min.js</code></td>
+	          <td>Advanced jQuery News Ticker plugin. <span class="label label-info"><a href="http://www.givainc.com/labs/" target="_blank" style="color:#fff">LINK</a></span></td>
+	        </tr>
+	        <tr>
+	          <td><code>owl.carousel.min.js</code></td>
+	          <td>Advanced jQuery Carousel Plugin. <span class="label label-info"><a href="http://www.owlcarousel.owlgraphic.com/" target="_blank" style="color:#fff">LINK</a></span></td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery.prettyPhoto.js</code></td>
+	          <td>Pretty Lightbox / Modal Plugin. <span class="label label-info"><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank" style="color:#fff">LINK</a></span></td>
+	        </tr>
+	        <tr>
+	          <td><code>init.js</code></td>
+	          <td>Init all necessary js files/plugins etc. Above, First 7 Javascripts are basically Libraries OR Plugins, So you don't need to make any changes within them. You only need to configure init.js. Here is Table of content for init.js <br/><br/>
+
+<pre class="prettyprint">
+// -- 1. COUNTDOWN TIMER --  //
+// -- 2. MARQUEE --  //
+// -- 3. TABS NAV --  //
+// -- 4. CAROUSEL --  //
+// -- 5. TESTIMONIAL --  //
+// -- 6. SCROLL FUNCTION --  //
+// -- 7. TIPSY --  //
+// -- 8. PRETTYPHOTO --  //
+// -- 9. FITVIDS --  //
+// -- 10. TOGGLE --  //
+// -- 11. GOOGLE MAPS --  //
+</pre>
+
+init.js is JQuery(document).ready(function(){} <br/><br/>
+
+If you would like to configure any specific Plugin, simply find the appropriate label in the JS file, and then scroll down until you find the appropriate JS that needs to be edited. <br/><br/>
+	          </td>
+	        </tr>
+
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+
+  </section><!-- JavaScript -->
+
+
+
+
+     <section id="plugins" style="display:none">
+	<div class="page-header">
+	  <h1>Plugins/API <small>To be configure</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    	 <div class="alert alert-info"> <strong>INFO : </strong> To Configure any of the following Plugin, Open init.js, Look for plugin name & Edit Options. </div>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Plugin Name</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>Navigation</code></td>
+	          <td>Following javascript snippet allows you to set navigation <b>Hash Tag Link Title</b> for each menu. <br/><br/>
+<pre class="prettyprint js linenums:30">
+var ascensor = $('#qcPageWrapper').ascensor({ascensorFloorName:["intro", "skills", "work" , "team" , "services", "features", "blog", "about", "contact"], direction: [[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9]], swipeNavigation:true });
+</pre>
+
+
+	          </td>
+	        </tr>
+	        <tr>
+	          <td><code>FLICKR</code></td>
+	          <td>Fetches Images from your Flickr account. <br/><br/>
+<pre class="prettyprint js linenums:223">
+// Flickr
+$('#flickr').jflickrfeed({
+	limit: 12,
+	qstrings: {
+	id: '52617155@N08' // Define Flickr ID //
+	},
+	itemTemplate: '&lt;li&gt;&lt;a href="{{image_b}}" rel="prettyPhoto[pp_gal]"&gt;&lt;img class="flickr" src="{{image_s}}" alt="{{title}}"&gt;&lt;/a&gt;&lt;/li&gt;'
+	}, function(data) {
+	$('#flickr a').prettyPhoto();
+});
+</pre>
+
+
+	          </td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+
+  </section><!-- Plugins -->
+
+
+
+
+      <section id="navigation">
+	<div class="page-header">
+	  <h1>Navigation <small>Menu Styles</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <p>Eventicka has standard navigation system.</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Navigation</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>Primary</code></td>
+	          <td>This is Standard Navigation built with nested unordered lists and links. If you are browsing through Mobile, Standard menu will be converted into DropDown Menu which is more easy to navigate. Example markup for Standard navigation is :<br/><br/>
+
+<pre class="prettyprint">
+		&lt;nav id="qcPriNav" class="col-6 col"&gt;
+			&lt;ul class="clearfix"&gt;
+				&lt;li class="current"&gt;&lt;a href="event.html"&gt;&lt;i class="icon-calendar-2 icon"&gt;&lt;/i&gt; &lt;span&gt;Event Details&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="ticket.html"&gt;&lt;i class="icon-ticket icon"&gt;&lt;/i&gt; &lt;span&gt;Buy Tickets&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+</pre>
+
+
+	          </td>
+	        </tr>
+	        <tr>
+	          <td><code>Tabs</code></td>
+	          <td>This is secondary navigation inside pages. Example markup for Tab navigation is :<br/><br/>
+
+<pre class="prettyprint">
+				&lt;!-- ## TAB NAV ## --&gt;
+				&lt;ul id="qcTabNav" class="clearfix"&gt;
+					&lt;li&gt;&lt;a href="#tab-1"&gt;&lt;i class="icon-book-open icon"&gt;&lt;/i&gt; &lt;span&gt;TAB 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#tab-2"&gt;&lt;i class="icon-clock-1 icon"&gt;&lt;/i&gt; &lt;span&gt;TAB 2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#tab-3"&gt;&lt;i class="icon-user-add icon"&gt;&lt;/i&gt; &lt;span&gt;TAB 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#tab-4"&gt;&lt;i class="icon-map icon"&gt;&lt;/i&gt; &lt;span&gt;TAB 4&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+
+				&lt;!-- ## TAB PAGES ## --&gt;
+
+				&lt;div id="tab-1" class="qcTabPage clearfix"&gt;
+					&lt;!-- ## TAB 1 CONTENT ## --&gt;
+				&lt;/div&gt;
+
+				&lt;div id="tab-2" class="qcTabPage clearfix"&gt;
+					&lt;!-- ## TAB 2 CONTENT ## --&gt;
+				&lt;/div&gt;
+
+				&lt;div id="tab-3" class="qcTabPage clearfix"&gt;
+					&lt;!-- ## TAB 3 CONTENT ## --&gt;
+				&lt;/div&gt;
+
+				&lt;div id="tab-4" class="qcTabPage clearfix"&gt;
+					&lt;!-- ## TAB 4 CONTENT ## --&gt;
+				&lt;/div&gt;
+</pre>
+
+
+	          </td>
+	        </tr>
+
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+
+  </section><!-- Navigation -->
+
+
+
+
+      <section id="form">
+	<div class="page-header">
+	  <h1>Forms <small>Ticket Reservation & Contact Form</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <p>Eventicka comes with Ticket Reservation Form & Contact Form Powered by JQuery Validation & Ajax.</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Navigation</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>Ticket Reservation Form</code></td>
+	          <td>Ticket Reservation Form allows you to reserve event ticket through email. Html Markup for Ticket Reservation Form is : <br/><br/>
+
+<pre class="prettyprint">
+&lt;!-- ## TICKET FORM ## --&gt;
+&lt;form action="includes/form/qcForm.php" id="qcTcktForm" class="qcForm" name="qcTcktForm" method="post"&gt;
+	&lt;ul class="clearfix"&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="name"&gt;Name&lt;/label&gt;
+				&lt;input type="text" id="name" name="name" class="requiredField" value="" placeholder="Enter full name" /&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="email"&gt;Email&lt;/label&gt;
+				&lt;input type="text" id="email" name="email" class="email requiredField" value="" placeholder="Enter email-id" /&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="phone"&gt;Phone&lt;/label&gt;
+				&lt;input type="text" id="phone" name="phone" class="requiredField" value="" placeholder="Enter contact number" /&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper herr"&gt;
+				&lt;label for="ticket"&gt;Ticket&lt;/label&gt;
+				&lt;select name="ticket" id="ticket" class="requiredField"&gt;
+					&lt;option value=""&gt;Select Package&lt;/option&gt;
+					&lt;option value="early"&gt;Early Bird&lt;/option&gt;
+					&lt;option value="general"&gt;General&lt;/option&gt;
+					&lt;option value="vip"&gt;VIP&lt;/option&gt;
+				&lt;/select&gt;
+				&lt;select name="quantity" id="quantity" class="requiredField"&gt;
+					&lt;option value=""&gt;Quantity&lt;/option&gt;
+					&lt;option value="1"&gt;1&lt;/option&gt;
+					&lt;option value="2"&gt;2&lt;/option&gt;
+					&lt;option value="3"&gt;3&lt;/option&gt;
+				&lt;/select&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="qcTcktCheck"&gt;
+		&lt;input type="checkbox" value="Book Ticket" class="requiredField checkbox"/&gt; 
+		&lt;span&gt;I'm agree to the Terms & Conditions.&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="qcTcktSubmit"&gt;
+		&lt;input type="hidden" name="formtype" value="ticket"/&gt;
+		&lt;button type="submit" class="submit"&gt;Reserve Ticket&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+	</td>
+</tr>
+
+<tr>
+	<td>
+	     <code>Contact Form</code>     
+	</td>
+	<td>
+		Html Markup for Contact Form is : <br/><br/>	
+<pre class="prettyprint">
+&lt;!-- ## CONTACT FORM ## --&gt;
+&lt;form action="includes/form/qcForm.php" id="qcContactForm" class="qcForm" name="qcContactForm" method="post"&gt;
+	&lt;ul class="clearfix"&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="contact-name"&gt;Name&lt;/label&gt;
+				&lt;input type="text" id="contact-name" name="contact-name" class="requiredField" value="" placeholder="Enter full name" /&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="contact-email"&gt;Email&lt;/label&gt;
+				&lt;input type="text" id="contact-email" name="contact-email" class="email requiredField" value="" placeholder="Enter email-id" /&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="contact-phone"&gt;Phone&lt;/label&gt;
+				&lt;input type="text" id="contact-phone" name="contact-phone" class="requiredField" value="" placeholder="Enter contact number" /&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="contact-subject"&gt;Subject&lt;/label&gt;
+				&lt;select name="contact-subject" id="contact-subject" class="requiredField"&gt;
+					&lt;option value=""&gt;Select Subject&lt;/option&gt;
+					&lt;option value="registration"&gt;Regarding event registration&lt;/option&gt;
+					&lt;option value="support"&gt;Support related&lt;/option&gt;
+					&lt;option value="refund"&gt;Refund&lt;/option&gt;
+				&lt;/select&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class="full"&gt;
+			&lt;div class="wrapper"&gt;
+				&lt;label for="contact-message"&gt;Message&lt;/label&gt;
+				&lt;textarea id="contact-message" name="contact-message" class="requiredField" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;											
+	&lt;/ul&gt;
+	&lt;div class="qcTcktSubmit"&gt;
+		&lt;input type="hidden" name="formtype" value="contact"/&gt;
+		&lt;button type="submit" class="submit"&gt;Submit form&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+	</td>
+</tr>
+	        
+<tr>
+	<td>
+	          
+	</td>
+	<td>
+
+To configure both form, Open "qcForm.php" located inside . . /includes/form/qcForm.php. It looks something like this : <br/><br/>
+
+<pre class="prettyprint">
+// Replace your@email.com
+$mailTo = 'your@email.com';
+
+if ($_POST['formtype'] == 'ticket') {
+	$subject = ('Ticket Form').' [ '.$_SERVER["HTTP_HOST"].' ] ';
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$ticket = $_POST['ticket'];
+	$quantity = $_POST['quantity'];		
+	$body = ("Name: $name \n\nEmail: $email \n\nPhone: $phone \n\nTicket: $ticket \n\nQuantity: $quantity" );
+} 
+if ($_POST['formtype'] == 'contact') {
+	$subject = ('Contact Form').' [ '.$_SERVER["HTTP_HOST"].' ] ';
+	$name = $_POST['contact-name'];
+	$email = $_POST['contact-email'];
+	$phone = $_POST['contact-phone'];
+	$regarding = $_POST['contact-subject'];
+	$message = $_POST['contact-message'];
+	$body = ("Name: $name \n\nEmail: $email \n\nPhone: $phone \n\nSubject: $regarding \n\nMessage: $message" );
+}
+
+$headers = ('From:') .' <'.$name.'>' . "\r\n" . ('Reply-To:') . $email;
+mail($mailTo, $subject, $body, $headers);
+</pre>
+& Replace <strong>"your@email.com"</strong> with your email id. This is the Email ID where you will receive all incoming mails.
+	          </td>
+	        </tr>
+
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+
+  </section><!-- Forms -->
+
+
+
+
+
+	<section id="credits">
+	  <div class="page-header">
+	    <h1>Credits Files <small>Some of your credits and sources</small></h1>
+	  </div>
+	  <p>I've used the following images, icons or other files as listed.</p>
+	 	<a href="#" target="_blank">Credits.txt</a>
+	</section><!-- Credits -->
+
+
+	      <hr />
+
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p style="float:left">Documentation Template Crafted with &hearts; by <a href="http://themeforest.net/user/Ivor" target="_blank">Ivor</a></p> <p style="float:right">&copy; <a href="http://themeforest.net/user/QuadCodes" target="_blank">QUADCODES</a> 2014</p>
+</footer>
+
+</div><!-- /container -->
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-alert.js"></script>
+<script src="assets/js/bootstrap-modal.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script>
+<script src="assets/js/bootstrap-scrollspy.js"></script>
+<script src="assets/js/bootstrap-tab.js"></script>
+<script src="assets/js/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
