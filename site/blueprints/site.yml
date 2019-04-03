@@ -14,3 +14,5 @@ columns:
           - about
           - home
           - default
+          - event
+          - ticket

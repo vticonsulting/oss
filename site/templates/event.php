@@ -1,55 +1,9 @@
-<!doctype html>
-<html>
-<head>
-	<!-- ## SITE META ## -->
-	<meta charset="utf-8">
-	<title>Eventicka | Event Landing Page & Ticketing</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="./includes/img/placeholder/favicon.ico">
-
-	<!-- ## LOAD STYLSHEETS ## -->
-	<link rel="stylesheet" media="all" href="./includes/css/style.css"/>
-
-	<!-- ## GOOGLE FONTS ## -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-
-</head>
-
-<body>
-
-<!-- ## HEADER ## -->
-<header id="qcHeader">
-	<div class="row">
-
-		<!-- ## LOGO ## -->
-		<div id="qcLogo" class="col-6 col">
-			<a href="index.html"><img src="./includes/img/placeholder/logo-header.png" alt="" /></a>
-		</div>
-
-		<!-- ## SITE NAVIGATION ## -->
-		<nav id="qcPriNav" class="col-6 col">
-			<ul class="clearfix">
-				<li class="current"><a href="event.html"><i class="icon-calendar-2 icon"></i> <span>Event Details</span></a></li>
-				<li><a href="ticket.html"><i class="icon-ticket icon"></i> <span>Buy Tickets</span></a></li>
-			</ul>
-		</nav>
-
-	</div>
-</header>
-<!-- ## HEADER END ## -->
-
-
-<!-- ## CONTENT WRAPPER ## -->
-<div id="qcContentWrapper">
+<?php snippet('top') ?>
 
 	<!-- ## PAGE TITLE ## -->
 	<section id="qcSecbar">
 		<div class="qcContainer">
-			<h1>Event. <span>Know more about the event</span></h1>
+			<h1><?= $page->title() ?><span><?= $page->subtitle() ?></span></h1>
 		</div>
 	</section>
 
@@ -745,50 +699,4 @@
 	</section>
 	<!-- ## PAGE CONTENT END ## -->
 
-
-</div>
-<!-- ## CONTENT WRAPPER END ## -->
-
-
-<!-- ## FOOTER ## -->
-<footer id="qcFooter" class="clearfix">
-	<div class="qcContainer">
-
-		<!-- ## FOOTER NAV ## -->
-		<div class="col-5 col">
-			<nav id="qcFooterNav">
-				<ul class="clearfix">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<!-- ## FOOTER LOGO ## -->
-		<div id="qcFooterLogo" class="col-2 col">
-			<a href="#">
-				<img src="./includes/img/placeholder/logo-footer.png" alt="LOGO" />
-			</a>
-		</div>
-
-		<!-- ## FOOTER COPYRIGHTS ## -->
-		<div id="qcFooterPara" class="col-5 col">
-			<p>EVENTICKA is the property of Macula Internet, Mumbai. <br /> <span>&copy;Copyrights QuadCodes 2014</span></p>
-		</div>
-
-	</div>
-</footer>
-<!-- ## FOOTER END ## -->
-
-<!-- ## LOAD JAVASCRIPTS ## -->
-<script src="./includes/js/2.1.1.jquery.min.js" type="text/javascript"></script>
-<script src="./includes/js/owl.carousel.min.js" type="text/javascript"></script>
-<script src="./includes/js/library.js" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=3.5" type="text/javascript"></script>
-<script src="./includes/js/init.js" type="text/javascript"></script>
-
-</body>
-
-</html>
+<?php snippet('bottom') ?>

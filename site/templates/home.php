@@ -1,29 +1,31 @@
-<?php snippet('header') ?>
+<?php snippet('top') ?>
 
-<main>
-  <header class="intro">
-    <h1><?= $site->title() ?></h1>
-  </header>
+<!-- ## FULLSCREEN SLIDES ## -->
+<section id="slideContent">
 
-  <ul class="grid">
-    <?php foreach (page('photography')->children()->listed() as $album): ?>
-    <li>
-      <a href="<?= $album->url() ?>">
-        <figure>
-          <?php if ($cover = $album->cover()): ?>
-          <?= $cover->resize(1024, 1024) ?>
-          <?php endif ?>
-          <figcaption>
-            <span>
-              <span class="example-name"><?= $album->title() ?></span>
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
-    <?php endforeach ?>
-  </ul>
+  <!-- ## SLIDE CONTROLS ## -->
+  <div id="qcHomeSlideControls">
 
-</main>
+    <!-- ## SLIDE DOT NAV ## -->
+    <ul id="slide-list"></ul>
 
-<?php snippet('footer') ?>
+    <!-- ## PROGRESS BAR ## -->
+    <div id="progress-back" class="load-item">
+      <div id="progress-bar"></div>
+    </div>
+
+  </div>
+
+</section>
+<!-- ## FULLSCREEN SLIDES ## -->
+
+<!-- ## BACKGROUND OVERLAY ## -->
+<section id="qcOverlay">
+  <div id="qcEventLogo" class="loading">
+    <a href="#">
+      <img src="http://placehold.it/300x200&text=Center+Logo" alt="" />
+    </a>
+  </div>
+</section>
+
+<?php snippet('bottom') ?>
