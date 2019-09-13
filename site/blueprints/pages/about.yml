@@ -1,4 +1,5 @@
 title: About us
+
 icon: ☎️
 
 status:
@@ -6,7 +7,7 @@ status:
   listed: true
 
 options:
-  url: false
+  changeSlug: false
   delete: false
 
 columns:

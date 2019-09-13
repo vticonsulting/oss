@@ -1,0 +1,29 @@
+Title: Ticket.
+
+----
+
+Nav-text: Buy Tickets
+
+----
+
+Icon-name: icon-ticket
+
+----
+
+Cover: 
+
+----
+
+Subtitle: Reserve a seat for yourself
+
+----
+
+Text: Testing
+
+----
+
+About:
+
+Old School Saturday® Events are affectionately knows as "OSS" by our legions of fans and followers.  OSS events have been entertaining “The Old School Nation” since 2003.  People often say that OSS is not a “just a party”…nope, OSS is an “EVENT” (in every sense).  Our well-managed events deliver an entertaining “Old School EXPERIENCE” for all that attend.  We celebrate music from yesteryear as our DJs deliver “The Soundtrack Of Your Life” (classics & favorites from the 1980s & 1990s).  Our rotating locations are typically large, upscale hotel ballrooms and event spaces.  Our guests enjoy extensive sound, light, and video production at all of our events.  VIP tables and birthday package celebrations are extremely popular. 
+
+#All80s #All90s #OldSchoolEXPERIENCE  #OldSchoolNATION  #WeAreOldSchool

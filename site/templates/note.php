@@ -1,5 +1,3 @@
-<?php snippet('header') ?>
-
 <main>
   <article class="note">
     <header class="note-header intro">
@@ -15,5 +13,3 @@
     </div>
   </article>
 </main>
-
-<?php snippet('footer') ?>

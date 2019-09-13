@@ -1,12 +1,16 @@
 <?php
 
 use Kirby\Cms\System;
+use Kirby\Toolkit\Str;
 
 /**
  * System
  */
 return [
     'fields' => [
+        'ascii' => function () {
+            return Str::$ascii;
+        },
         'isOk' => function (System $system) {
             return $system->isOk();
         },
@@ -31,12 +35,15 @@ return [
         'requirements' => function (System $system) {
             return $system->toArray();
         },
-        'breadcrumbTitle' => function () {
+        'site' => function () {
             try {
                 return $this->site()->blueprint()->title();
             } catch (Throwable $e) {
                 return $this->site()->title()->value();
             }
+        },
+        'slugs' => function () {
+            return Str::$language;
         },
         'title' => function () {
             return $this->site()->title()->value();
@@ -82,7 +89,7 @@ return [
             'requirements'
         ],
         'panel' => [
-            'breadcrumbTitle',
+            'ascii',
             'isOk',
             'isInstalled',
             'isLocal',
@@ -91,10 +98,12 @@ return [
             'license',
             'multilang',
             'requirements',
+            'site',
+            'slugs',
             'title',
             'translation',
             'user' => 'auth',
-                'version'
+            'version'
         ]
     ],
 ];

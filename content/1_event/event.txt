@@ -1,0 +1,64 @@
+Title: Event
+
+----
+
+Subtitle: Reserve seat for yourself
+
+----
+
+Nav-text: Event Details
+
+----
+
+Icon-name: icon-calendar-2
+
+----
+
+Text: Old School Saturday® Events are affectionately known as "OSS" by our legions of fans and followers.  OSS events have been entertaining “The Old School Nation” since 2003.
+
+----
+
+Tabs:
+
+- 
+  tab_nav_title: About
+  tab_title: About
+  tab_subtitle: Know more about the event
+- 
+  tab_nav_title: Venue
+  tab_title: 'Venue & Layout'
+  tab_subtitle: 'Venue & Layout of to the event'
+- 
+  tab_nav_title: Gallery
+  tab_title: Gallery
+  tab_subtitle: Some memories of the past event
+
+----
+
+Cover:
+
+- 2019-08-09-hyatt-regency.jpg
+
+----
+
+Icon: ticket
+
+----
+
+Address: 
+
+----
+
+Email: 
+
+----
+
+Phone: 
+
+----
+
+Social: 
+
+----
+
+Date: 2019-04-02

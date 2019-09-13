@@ -3,19 +3,20 @@
 namespace Kirby\Toolkit;
 
 use Exception;
-use Kirby\Image\Image;
+use Kirby\Http\Idn;
 use Kirby\Toolkit\Str;
 use ReflectionFunction;
+use Throwable;
 
 /**
-* A set of validator methods
-*
-* @package   Kirby Toolkit
-* @author    Bastian Allgeier <bastian@getkirby.com>
-* @link      http://getkirby.com
-* @copyright Bastian Allgeier
-* @license   MIT
-*/
+ * A set of validator methods
+ *
+ * @package   Kirby Toolkit
+ * @author    Bastian Allgeier <bastian@getkirby.com>
+ * @link      https://getkirby.com
+ * @copyright Bastian Allgeier GmbH
+ * @license   https://opensource.org/licenses/MIT
+ */
 class V
 {
 
@@ -66,12 +67,20 @@ class V
         $reflection = new ReflectionFunction($validator);
         $arguments  = [];
 
-
         foreach ($reflection->getParameters() as $index => $parameter) {
             $value = $params[$index] ?? null;
 
             if (is_array($value) === true) {
-                $value = implode(', ', $value);
+                try {
+                    foreach ($value as $index => $item) {
+                        if (is_array($item) === true) {
+                            $value[$index] = implode('|', $item);
+                        }
+                    }
+                    $value = implode(', ', $value);
+                } catch (Throwable $e) {
+                    $value = '-';
+                }
             }
 
             $arguments[$parameter->getName()] = $value;
@@ -262,7 +271,20 @@ V::$validators = [
      * Checks for valid email addresses
      */
     'email' => function ($value): bool {
-        return filter_var($value, FILTER_VALIDATE_EMAIL) !== false;
+        if (filter_var($value, FILTER_VALIDATE_EMAIL) === false) {
+            try {
+                $parts   = Str::split($value, '@');
+                $address = $parts[0] ?? null;
+                $domain  = Idn::encode($parts[1] ?? '');
+                $email   = $address . '@' . $domain;
+            } catch (Throwable $e) {
+                return false;
+            }
+
+            return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+        }
+
+        return true;
     },
 
     /**

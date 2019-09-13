@@ -1,5 +1,7 @@
 title: Note
+
 num: date
+
 icon: 📖
 
 status:
@@ -32,12 +34,3 @@ columns:
           author:
             type: users
           tags: true
-          gallery:
-            type: pages
-            query: site.find("photography").children
-            multiple: false
-            info: "{{ page.images.count }} image(s)"
-            empty: "No gallery selected"
-            image:
-              cover: true
-            help: Place the {{ gallery }} tag anywhere in your text to add the selected gallery
