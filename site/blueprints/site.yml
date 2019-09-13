@@ -58,4 +58,3 @@ columns:
       pages:
         type: pages
         status: listed
-      notes: sections/notes
