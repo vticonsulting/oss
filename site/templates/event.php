@@ -8,5 +8,4 @@
   </div>
 </section>
 <!-- ## PAGE CONTENT END ## -->
-
 <?php snippet('bottom') ?>
