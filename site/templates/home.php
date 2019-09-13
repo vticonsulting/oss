@@ -1,7 +1,4 @@
-<?php snippet('header') ?>
-
-<?php // snippet('fullscreen_slides') ?>
-
-<?php // snippet('background_overlary') ?>
-
-<?php snippet('footer') ?>
+<?php snippet('top') ?>
+<?php snippet('home-slides') ?>
+<?php snippet('home-overlay') ?>
+<?php snippet('bottom') ?>

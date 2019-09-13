@@ -1,3 +1,61 @@
 title: Site
-preset: pages
-unlisted: true
+
+columns:
+  - width: 1/2
+    fields:
+      event_date:
+        label: Next Event Date
+        type: date
+        width: 1/2
+      start_time:
+        label: Time
+        type: time
+        notation: 12
+        default: 09:30 pm
+        step: 30
+        width: 1/2
+      ticket_link:
+        label: Ticket Link
+        type: url
+      event_location:
+        label: Event Location
+        type: text
+      marquee:
+        label: Marquee Banner
+        type: structure
+        fields:
+          highlight:
+            label: Highlight
+            type: text
+      copyright:
+        type: text
+      facebook:
+        label: Facebook
+        type: url
+        icon: facebook
+      twitter:
+        label: Twitter
+        type: text
+        icon: twitter
+        placeholder: @username
+      instagram:
+        label: Instagram
+        type: text
+        icon: instagram
+        placeholder: username
+      soundcloud:
+        label: Souncloud
+        type: text
+        icon: soundcloud
+        placeholder: username
+      vimeo:
+        label: Vimeo
+        type: text
+        icon: vimeo
+        placeholder: username
+  - width: 1/2
+    sections:
+      pages:
+        type: pages
+        status: listed
+      notes: sections/notes

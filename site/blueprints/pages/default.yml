@@ -1,8 +1,8 @@
 title: Default Page
+icon: 📝
 preset: page
 fields:
   text:
-    label: Text
     type: textarea
     size: large
 

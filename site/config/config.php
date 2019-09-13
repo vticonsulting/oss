@@ -1,17 +1,8 @@
 <?php
 
+date_default_timezone_set('America/New_York');
+
 return [
-    'cache' => [
-        'pages' => [
-            'active' => false,
-            'ignore' => function ($page) {
-                return $page->title()->value() === 'Do not cache me';
-            }
-        ]
-    ],
     'debug' => true,
-    'markdown' => [
-        'extra' => true
-    ],
-    'smartypants' => true
+    'date.handler' => 'strftime'
 ];

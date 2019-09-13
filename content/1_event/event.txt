@@ -1,4 +1,4 @@
-Title: Event.
+Title: Event
 
 ----
 
@@ -6,13 +6,42 @@ Subtitle: Reserve seat for yourself
 
 ----
 
-Text: 
+Nav-text: Event Details
 
-About:
+----
 
-Old School Saturday® Events are affectionately knows as "OSS" by our legions of fans and followers.  OSS events have been entertaining “The Old School Nation” since 2003.  People often say that OSS is not a “just a party”…nope, OSS is an “EVENT” (in every sense).  Our well-managed events deliver an entertaining “Old School EXPERIENCE” for all that attend.  We celebrate music from yesteryear as our DJs deliver “The Soundtrack Of Your Life” (classics & favorites from the 1980s & 1990s).  Our rotating locations are typically large, upscale hotel ballrooms and event spaces.  Our guests enjoy extensive sound, light, and video production at all of our events.  VIP tables and birthday package celebrations are extremely popular. 
+Icon-name: icon-calendar-2
 
-#All80s #All90s #OldSchoolEXPERIENCE  #OldSchoolNATION  #WeAreOldSchool
+----
+
+Text: Old School Saturday® Events are affectionately known as "OSS" by our legions of fans and followers.  OSS events have been entertaining “The Old School Nation” since 2003.
+
+----
+
+Tabs:
+
+- 
+  tab_nav_title: About
+  tab_title: About
+  tab_subtitle: Know more about the event
+- 
+  tab_nav_title: Venue
+  tab_title: 'Venue & Layout'
+  tab_subtitle: 'Venue & Layout of to the event'
+- 
+  tab_nav_title: Gallery
+  tab_title: Gallery
+  tab_subtitle: Some memories of the past event
+
+----
+
+Cover:
+
+- 2019-08-09-hyatt-regency.jpg
+
+----
+
+Icon: ticket
 
 ----
 

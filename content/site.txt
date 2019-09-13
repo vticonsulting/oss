@@ -1,12 +1,66 @@
-Title: Old School Saturday
+Title: OSS
+
 ----
-Month: 4
+
+Event-date: 2019-09-25
+
 ----
-Day: 24
+
+Start-time: 09:30 pm
+
 ----
-Year: 2019
+
+Ticket-link: https://www.freshtix.com/events/old-school-saturday-sep2019
+
 ----
-Hour: 9
+
+Event-location: The Hyatt
+
 ----
-Minute: 30
+
+Marquee:
+
+- 
+  highlight: '<b>Next Event</b> Sep-25-2019 @ The Hyatt'
+- 
+  highlight: '<b>Discount $10 Tix</b> Selling Now'
+- 
+  highlight: '<b>#All80s #All90s</b> Your Music.'
+- 
+  highlight: '<b>#OldSchoolEXPERIENCE.</b> The Soundtrack Of You Life.'
+
 ----
+
+Copyright: OSS is the property of Old School Saturday, LLCs
+
+----
+
+Facebook: http://www.facebook.com/oldschoolsaturday
+
+----
+
+Twitter: oldschoolsat
+
+----
+
+Instagram: oldschoolsaturday
+
+----
+
+Soundcloud: 
+
+----
+
+Vimeo: 
+
+----
+
+Date: 2019-09-13
+
+----
+
+Time: 
+
+----
+
+Website: 
